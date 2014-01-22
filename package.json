@@ -1,0 +1,25 @@
+{
+  "name": "geocodio",
+  "version": "0.0.1",
+  "description": "Library for geocodio gecoding service",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:desmondmorris/node-geocodio.git"
+  },
+  "keywords": [
+    "geocoder",
+    "geocodio"
+  ],
+  "author": "Desmond Morris <hi@desmondmorris.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desmondmorris/node-geocodio/issues"
+  },
+  "dependencies": {
+    "request": "~2.33.0"
+  }
+}
