@@ -98,3 +98,5 @@ geocodio.parse(address, function(err, response){
 
 ## Changelog
 * **0.0.1**: Initial implementation of geocode and parse endpoints
+* **0.1.0**: Introduces reverse endpoint
+

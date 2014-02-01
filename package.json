@@ -1,6 +1,6 @@
 {
   "name": "geocodio",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Library for geocodio gecoding service",
   "main": "index.js",
   "directories": {
