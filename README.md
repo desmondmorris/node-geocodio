@@ -1,5 +1,7 @@
 # Geocodio
 
+<a href="https://nodei.co/npm/geocodio/"><img src="https://nodei.co/npm/geocodio.png"></a>
+
 A library for accessing the [Geocodio](http://geocod.io/) geocoder service.
 
 
@@ -9,8 +11,7 @@ A library for accessing the [Geocodio](http://geocod.io/) geocoder service.
 
 ## Usage
 
-
-### Installation
+### Configuration
 
 ```JavaScript
 var Geocodio = require('geocodio');
