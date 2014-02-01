@@ -42,6 +42,29 @@ geocodio.geocode(addresses, function(err, response){
     console.log(response);
 });
 
+// Reverse geocode
+
+var coordinate = '42.583448,-71.005738';
+
+geocodio.reverse(coordinate, function(err, response){
+    if (err) throw err;
+
+    console.log(response);
+});
+
+// Bulk reverse geocode a list of coordinates
+
+var coordinates = [
+  '42.583448,-71.005738',
+  '42.584714,-71.007359'
+];
+
+geocodio.geocode(coordinates, function(err, response){
+    if (err) throw err;
+
+    console.log(response);
+});
+
 // Parse an address
 
 var address = 'One Embarcadero Center, 9th Floor, San Francisco, CA 94111';
