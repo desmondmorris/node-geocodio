@@ -9,8 +9,10 @@ A library for accessing the [Geocodio](http://geocod.io/) geocoder service.
 
 ## Usage
 
-```JavaScript
 
+### Installation
+
+```JavaScript
 var Geocodio = require('geocodio');
 
 var config = {
@@ -19,7 +21,11 @@ var config = {
 
 var geocodio = new Geocodio(config);
 
-// Geocode a single address
+```
+
+### Geocode a single address
+
+```JavaScript
 
 var address = 'One Embarcadero Center, 9th Floor, San Francisco, CA 94111';
 
@@ -29,7 +35,11 @@ geocodio.geocode(address, function(err, response){
     console.log(response);
 });
 
-// Bulk geocode a list of addresses
+```
+
+### Bulk geocode a list of addresses
+
+```JavaScript
 
 var addresses = [
   'One Embarcadero Center, 9th Floor, San Francisco, CA 94111',
@@ -41,9 +51,11 @@ geocodio.geocode(addresses, function(err, response){
 
     console.log(response);
 });
+```
 
-// Reverse geocode
+### Reverse geocode
 
+```JavaScript
 var coordinate = '42.583448,-71.005738';
 
 geocodio.reverse(coordinate, function(err, response){
@@ -52,8 +64,11 @@ geocodio.reverse(coordinate, function(err, response){
     console.log(response);
 });
 
-// Bulk reverse geocode a list of coordinates
+```
 
+### Bulk reverse geocode a list of coordinates
+
+```JavaScript
 var coordinates = [
   '42.583448,-71.005738',
   '42.584714,-71.007359'
@@ -65,7 +80,11 @@ geocodio.geocode(coordinates, function(err, response){
     console.log(response);
 });
 
-// Parse an address
+```
+
+### Parse an address
+
+```JavaScript
 
 var address = 'One Embarcadero Center, 9th Floor, San Francisco, CA 94111';
 
