@@ -75,7 +75,7 @@ var coordinates = [
   '42.584714,-71.007359'
 ];
 
-geocodio.geocode(coordinates, function(err, response){
+geocodio.reverse(coordinates, function(err, response){
     if (err) throw err;
 
     console.log(response);
