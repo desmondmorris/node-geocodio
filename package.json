@@ -1,11 +1,8 @@
 {
   "name": "geocodio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Library for geocodio gecoding service",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:desmondmorris/node-geocodio.git"
