@@ -18,5 +18,12 @@
   },
   "dependencies": {
     "request": "~2.33.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "standard": "^3.7.1"
+  },
+  "scripts": {
+    "test": "standard && mocha"
   }
 }

@@ -4,10 +4,8 @@
 
 A library for accessing the [Geocodio](http://geocod.io/) geocoder service.
 
-
 ## Installation
     npm install geocodio
-
 
 ## Usage
 
@@ -30,7 +28,7 @@ var geocodio = new Geocodio(config);
 
 var address = 'One Embarcadero Center, 9th Floor, San Francisco, CA 94111';
 
-geocodio.geocode(address, function(err, response){
+geocodio.get('geocode', {q: address}, function(err, response){
     if (err) throw err;
 
     console.log(response);
@@ -47,7 +45,7 @@ var addresses = [
   '880 Broadway, New York, NY, 10003'
 ];
 
-geocodio.geocode(addresses, function(err, response){
+geocodio.post('geocode', addresses, function(err, response){
     if (err) throw err;
 
     console.log(response);
@@ -61,7 +59,7 @@ geocodio.geocode(addresses, function(err, response){
 ```JavaScript
 var coordinate = '42.583448,-71.005738';
 
-geocodio.reverse(coordinate, function(err, response){
+geocodio.get('reverse', {q: coordinate}, function(err, response){
     if (err) throw err;
 
     console.log(response);
@@ -79,7 +77,7 @@ var coordinates = [
   '42.584714,-71.007359'
 ];
 
-geocodio.reverse(coordinates, function(err, response){
+geocodio.post('reverse', coordinates, function(err, response){
     if (err) throw err;
 
     console.log(response);
@@ -95,7 +93,7 @@ geocodio.reverse(coordinates, function(err, response){
 
 var address = 'One Embarcadero Center, 9th Floor, San Francisco, CA 94111';
 
-geocodio.parse(address, function(err, response){
+geocodio.get('parse', {q: address}, function(err, response){
     if (err) throw err;
 
     console.log(response);
