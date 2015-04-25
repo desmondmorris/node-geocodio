@@ -108,6 +108,7 @@ geocodio.get('parse', {q: address}, function(err, response){
 * **0.1.0**: Introduces reverse endpoint.
 * **1.0.0**: Adds request helper methods and decouples single/batch responses
 * **1.1.0**: Adds query parameter support - #6 @walker
+* **2.0.0**: Deprecates convenience methods
 
 The MIT License (MIT)
 
