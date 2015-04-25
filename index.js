@@ -1,3 +1,1 @@
-'use strict';
-
-module.exports = require('./lib/geocodio');
+module.exports = require('./lib/geocodio')

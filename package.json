@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/desmondmorris/node-geocodio/issues"
   },
+  "devDependencies": {
+    "standard": "^3.7.1"
+  },
   "dependencies": {
     "request": "~2.33.0"
   }
