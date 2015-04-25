@@ -109,6 +109,7 @@ geocodio.parse(address, function(err, response){
 * **0.0.1**: Initial implementation of geocode and parse endpoints.
 * **0.1.0**: Introduces reverse endpoint.
 * **1.0.0**: Adds request helper methods and decouples single/batch responses
+* **1.1.0**: Adds query parameter support - #6 @walker
 
 The MIT License (MIT)
 
