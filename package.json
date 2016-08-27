@@ -17,7 +17,7 @@
     "url": "https://github.com/desmondmorris/node-geocodio/issues"
   },
   "dependencies": {
-    "request": "~2.33.0"
+    "request": "^2.74.0"
   },
   "devDependencies": {
     "mocha": "^2.2.4",
