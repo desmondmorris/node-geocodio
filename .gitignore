@@ -1,1 +1,7 @@
 node_modules/
+
+# ide
+.vscode/
+
+# test suite
+test/live_test_config.json
