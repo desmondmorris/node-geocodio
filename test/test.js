@@ -12,7 +12,7 @@ describe('Geocodio', function () {
 
   it('Is configurable', function () {
     var config = {
-      base_endpoint: 'http://api.geocod.io/v2',
+      base_endpoint: 'https://api.geocod.io/v1',
       foo: 'bar'
     }
 
@@ -28,6 +28,23 @@ describe('Geocodio', function () {
 
     assert(typeof client.config.foo !== 'undefined')
     assert.equal(client.config.foo, config.foo)
+  })
+
+  it('Can retrieve geocodes', function (done) {
+    var liveTestConfig
+    try {
+      liveTestConfig = require('./live_test_config.json')
+    } catch (err) {
+      done('live test configuration not provided, please create live_test_config.json and supply an "api_key" field')
+    }
+
+    var config = liveTestConfig
+
+    var client = new Geocodio(config)
+
+    client.get('geocode', { q: '1109 N Highland St., Arlington VA' }, function (err, location) {
+      done(err)
+    })
   })
 
   it('Has prototype methods', function () {
