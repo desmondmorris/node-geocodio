@@ -15,12 +15,15 @@ A library for accessing the [Geocodio](http://geocod.io/) geocoder service.
 var Geocodio = require('geocodio');
 
 var config = {
-    api_key: 'APIKEY'
+    api_key: 'APIKEY',
+    request_timeout: 300000
 }
 
 var geocodio = new Geocodio(config);
 
 ```
+* **api_key (Required)** - String containing the API Key from your [geocode.io](https://dash.geocod.io/usage?month=2018-05) account.
+* **request_timeout (Optional)** - Integer specifying the request time out limit. If you are performing a batch operation, large requests can take [about 300 Seconds](https://geocod.io/docs/#batch-geocoding) so be sure to set a timeout if you are performing a large request.
 
 ### Geocode a single address
 
